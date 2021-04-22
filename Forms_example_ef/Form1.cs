@@ -32,6 +32,12 @@ namespace Forms_example_ef
             List<Alumno> alumnos = curso.Alumnos.ToList();
             dataGridView1.DataSource = alumnos;
             dataGridView1.Columns[4].Visible = false;
+            dataGridView1.Columns[3].Visible = false;
+        }
+
+        private void textprofesor_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
